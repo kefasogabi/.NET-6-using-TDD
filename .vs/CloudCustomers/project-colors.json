@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1b68740e-28ec-49da-97d9-3113c876dd82": {
+      "ProjectGuid": "1b68740e-28ec-49da-97d9-3113c876dd82",
+      "DisplayName": "CloudCustomers.UnitTests",
+      "ColorIndex": 0
+    },
+    "3a59f6c7-07e8-45a5-8733-268523452625": {
+      "ProjectGuid": "3a59f6c7-07e8-45a5-8733-268523452625",
+      "DisplayName": "CloudCustomers.API",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
