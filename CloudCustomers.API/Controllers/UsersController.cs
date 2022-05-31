@@ -17,6 +17,13 @@ public class UsersController : ControllerBase
     [HttpGet(Name = "GetUsers")]
     public async Task<IActionResult> Get()
     {
-        return Ok("All good");
+        var users = await _userService.GetAllUsers();
+
+        if (users.Any())
+        {
+            return Ok(users);
+        }
+
+        return NotFound();
     }
 }
