@@ -29,9 +29,8 @@ namespace CloudCustomers.UnitTests.Systems.Services
             await sut.GetAllUsers();
             //Assert
             handlerMock.Protected().Verify("SendAsync", Times.Exactly(1), 
-                ItExpr.Is<HttpRequestMessage>(req => req.Method == HttpMethod.Get), 
+                ItExpr.Is<HttpRequestMessage>(req => req.Method == HttpMethod.Get),
                 ItExpr.IsAny<CancellationToken>());
-            //Verify Http Request
         }
     }
 }

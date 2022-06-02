@@ -12,9 +12,10 @@ namespace CloudCustomers.API.Services
             _httpClient = httpClient;
         }
 
-        public Task<List<User>> GetAllUsers()
+        public async Task<List<User>> GetAllUsers()
         {
-            throw new NotImplementedException();
+            var userResponse = await _httpClient.GetAsync("http://example.com");
+            return new List<User>() { };
         }
     }
 }
